@@ -38,7 +38,7 @@ public class PedidoServiceImpl implements PedidoInterface {
 	@Autowired
 	public ArrayList<PedidoDAO> selectPedidos() {
 
-		System.out.println("[INFO] Entrando en PedidoServiceImpl");
+		System.out.println("[INFO] Entrando en PedidoServiceImpl.selectPedidos()");
 		String sql = "SELECT * FROM \"public\".\"pedido\"";
 		ArrayList<PedidoDAO> listaPedidos = new ArrayList<PedidoDAO>();
 		
@@ -79,7 +79,6 @@ public class PedidoServiceImpl implements PedidoInterface {
 	public void insertPedido(String codPedido) {
 		
 		System.out.println("[INFO] -- Entrando en PedidoServiceImpl.insertPedido()");
-		System.out.println("\nIntroduzca un código de pedido para crear un pedido");
 		
 		try {
 			Connection conn = dataSource.getConnection();
@@ -97,7 +96,7 @@ public class PedidoServiceImpl implements PedidoInterface {
 			e.printStackTrace();
 		}
 		
-		System.out.println("[INFO] -- PedidoServiceImpl.insertPedido()");
+		System.out.println("[INFO] -- Saliendo de PedidoServiceImpl.insertPedido()");
 	}
 
 

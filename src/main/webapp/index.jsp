@@ -10,22 +10,7 @@
 </head>
 
 <body>
-	<div align="center">
-	    <h2>Title List</h2>
-	    
-	    <table border="1" cellpadding="5">
-	        <tr>
-	            <th>Name</th>
-	            <th>Price</th>
-	        </tr>
-	        <c:forEach items="${productsList}" var="product">
-	        <tr>
-	            <td>${product.name}</td>
-	            <td>${product.price}</td>
-	        </tr>
-	        </c:forEach>
-	    </table>
-	</div>   
+	 
 </body>
 
 </html>

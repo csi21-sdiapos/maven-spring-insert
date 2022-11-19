@@ -1,10 +1,7 @@
 package main;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
-
-import javax.sql.DataSource;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.MetadataSources;
@@ -40,7 +37,7 @@ public class Main {
 		ArrayList<PedidoDAO> listaPedidos = pedido.selectPedidos();
 
 		for (PedidoDAO p : listaPedidos)
-			System.out.println(String.format("pedidoId = %d, codPedido = %s", p.getPedidoId(), p.getCodPedido()));
+			System.out.println(p.getPedidoId() + " - " + p.getCodPedido());
 	}
 
 }

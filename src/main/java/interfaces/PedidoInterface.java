@@ -2,8 +2,6 @@ package interfaces;
 
 import java.util.ArrayList;
 
-import javax.sql.DataSource;
-
 import DAO.PedidoDAO;
 
 public interface PedidoInterface {
